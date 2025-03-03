@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Contact us for support, inquiries, or feedback. We're here to help!"
-    />
+    <meta name="description" content="Contact us for support, inquiries, or feedback. We're here to help!" />
     <title>Contact Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +15,7 @@
   </head>
   <body>
     <header>
-      <img src="images/Logo@2x.png" alt="Company Logo">
+      <img src="images/Logo@2x.png" alt="Company Logo" />
     </header>
 
     <main>
@@ -31,12 +28,12 @@
         <div class="row-layout">
           <div class="input-layout">
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Ethan Johnson" name="name">
+            <input id="name" type="text" placeholder="Ethan Johnson" name="name" />
           </div>
-          
+
           <div class="input-layout">
             <label for="email">Company Email</label>
-            <input id="email" type="email" placeholder="ethan@johnson.com" name="email">
+            <input id="email" type="email" placeholder="ethan@johnson.com" name="email" />
           </div>
         </div>
 
@@ -49,6 +46,9 @@
               <option value="between 50-100">50-100 employees</option>
               <option value="over 100">100+ employees</option>
             </select>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 9L12 15L6 9" stroke="#111729" stroke-width="2" />
+            </svg>
           </div>
 
           <div class="input-layout">
@@ -59,11 +59,16 @@
               <option value="Portfolio">Building a Portfolio Website</option>
               <option value="Web Application">Developing a Web Application</option>
             </select>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 9L12 15L6 9" stroke="#111729" stroke-width="2" />
+            </svg>
           </div>
         </div>
 
-        <label for="request">Message</label>
-        <textarea name="message" id="message" placeholder="50-100 employees"></textarea>
+        <div class="input-layout">
+          <label for="request">Message</label>
+          <textarea name="message" id="message" placeholder="50-100 employees"></textarea>
+        </div>
 
         <button>Contact Sales</button>
       </form>

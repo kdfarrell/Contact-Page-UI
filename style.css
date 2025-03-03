@@ -1,0 +1,169 @@
+/* CSS Variables */
+:root {
+    --clr-primary: #111729;
+    --clr-secondary: #FFFFFF;
+
+    --clr-accent-200: #CDD5E0;
+    --clr-accent-400: #4036A9;
+    --clr-accent-600: #B4436D;
+    --clr-accent-800: #FFFFFF33;
+
+    --font-size-xl: 4rem;
+    --font-size-l: 2rem;
+    --font-size-md: 1.25rem;
+    --font-size-normal: 1rem;
+    --font-size-sm: 0.875rem;
+}
+
+/* Global Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", serif;
+}
+
+/* Body */
+body {
+    background: url(images/background@2x.png) center / cover no-repeat;
+    padding: 1rem;
+    min-height: 100vh;
+    color: var(--clr-secondary);
+}
+
+/* General Layout */
+header {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: var(--font-size-l);
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Form Styles */
+form {
+    background-color: var(--clr-accent-800);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+label {
+    font-size: var(--font-size-sm);
+    color: var(--clr-accent-200);
+}
+
+/* Input Layout */
+.input-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* Form Elements */
+input, select, textarea, button {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: none;
+    font-size: var(--font-size-normal);
+}
+
+input, input::placeholder,
+textarea, textarea::placeholder {
+    color: var(--clr-primary);
+    font-weight: 600;
+    font-style: bold;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--clr-accent-600);
+    outline-offset: -4px;
+}
+
+/* Select Dropdown */
+select {
+    font-weight: 600;
+    font-style: bold;
+    color: var(--clr-primary);
+    appearance: none;
+    cursor: pointer;
+}
+
+option {
+    color: var(--clr-primary);
+    font-weight: 400;
+}
+
+/* SVG (Dropdown Arrow) */
+svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+/* Textarea */
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    color: var(--clr-accent-400);
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--clr-accent-600);
+}
+
+/* Responsive (Tablets & Larger) */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        max-width: 90%;
+    }
+
+    section {
+        max-width: 800px;
+    }
+
+    main {
+        max-width: 850px;
+    }
+
+    .row-layout {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .row-layout > div {
+        width: 50%;
+    }
+    
+    h1 {
+        font-size: var(--font-size-xl);
+    }
+}

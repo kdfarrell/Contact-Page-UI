@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact us for support, inquiries, or feedback. We're here to help!"
+    />
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/Logo@2x.png" alt="Company Logo">
+    </header>
+
+    <main>
+      <section>
+        <h1>Interested in our business pricing?</h1>
+        <p>Fill out the from to view detials and we'll contact you as soon as possible</p>
+      </section>
+
+      <form action="/database">
+        <div class="row-layout">
+          <div class="input-layout">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Ethan Johnson" name="name">
+          </div>
+          
+          <div class="input-layout">
+            <label for="email">Company Email</label>
+            <input id="email" type="email" placeholder="ethan@johnson.com" name="email">
+          </div>
+        </div>
+
+        <div class="row-layout">
+          <div class="input-layout">
+            <label for="size">Company Size</label>
+            <select id="size" name="size">
+              <option value="Under 10">1-10 employees</option>
+              <option value="between 11 - 50">11-50 employees</option>
+              <option value="between 50-100">50-100 employees</option>
+              <option value="over 100">100+ employees</option>
+            </select>
+          </div>
+
+          <div class="input-layout">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="nading Pages">Building Landing Pages</option>
+              <option value="E-commerce Webstite">Building E-commerce Website</option>
+              <option value="Portfolio">Building a Portfolio Website</option>
+              <option value="Web Application">Developing a Web Application</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="request">Message</label>
+        <textarea name="message" id="message" placeholder="50-100 employees"></textarea>
+
+        <button>Contact Sales</button>
+      </form>
+    </main>
+  </body>
+</html>
